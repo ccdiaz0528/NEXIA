@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexia - Chat IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">◆</div>
+            <div class="title" id="appTitle">Nexia</div>
+        </div>
+        <div class="header-right">
+            <div class="api-status disconnected" id="apiStatus">
+                <span class="status-dot"></span>
+                <span>Desconectado</span>
+            </div>
+            <button class="btn-secondary" id="btnNewChat">Nueva conversación</button>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+            <div style="text-align: center; color: #888888; margin: auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">👋 Bienvenido a Nexia</p>
+                <p style="font-size: 0.9rem;">Tu asistente inteligente con memoria</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    class="message-input" 
+                    id="messageInput" 
+                    placeholder="Escribe tu mensaje aquí..."
+                    rows="1"
+                ></textarea>
+            </div>
+            <button class="btn-send" id="btnSend" disabled>
+                ➤
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts externos -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
